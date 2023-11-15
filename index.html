@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icone.svg">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Pedra, Papel e Tesoura</title>
+</head>
+<body>
+    <h1>Pedra, Papel e Tesoura</h1>
+    <p></p>
+    <hr>
+    <span class="perfil">
+        <img src="img/jogador 1.png">
+        <label>Jogador 1<br><label id="resultado-fala-jogador"></label></label>
+    </span>
+    <div class="jogadas">
+        <h2>Faça sua jogada:</h2>
+        <br>
+        <span class="escolhas">
+            <div class="center">
+                <img class="icones" src="img/pedra.png" alt="Pedra">
+                <br>
+                <input type="radio" id="pedra1" name="escolha" value="Pedra">
+                <label for="pedra1">Pedra</label>
+            </div>
+            <div class="center">
+                <img class="icones" src="img/papel.png" alt="Papel">
+                <br>
+                <input type="radio" id="papel1" name="escolha" value="Papel">
+                <label for="papel1">Papel</label>
+            </div>
+            <div class="center">
+                <img class="icones" src="img/tesoura.png" alt="Tesoura">
+                <br>
+                <input type="radio" id="tesoura1" name="escolha" value="Tesoura">
+                <label for="tesoura1">Tesoura</label>
+            </div>
+        </span>
+    </div>
+
+    <hr>
+    <div class="jogar">
+        <button id="realizarJogada">Realizar Jogada</button>
+        <label id="ganhador"></label>
+        <label id="valor-humano" class="resultado-individual"></label>
+        <label id="valor-bot" class="resultado-individual"></label>
+    </div>
+    <hr>
+
+    <span class="perfil">
+        <img src="img/bot 1.png">
+        <label>Jogador 2<br><label id="resultado-fala-bot"></label></label>
+    </span>
+    <div class="jogadas">
+        <h2>Jogada:</h2>
+        <br>
+        <span class="escolhas">
+            <div class="center">
+                <img class="icones" src="img/pedra.png" alt="Pedra">
+                <br>
+                <input type="radio" id="pedra" name="escolha-bot" value="pedra" disabled>
+                <label for="pedra">Pedra</label>
+            </div>
+            <div class="center">
+                <img class="icones" src="img/papel.png" alt="Papel">
+                <br>
+                <input type="radio" id="papel" name="escolha-bot" value="papel" disabled>
+                <label for="papel">Papel</label>
+            </div>
+            <div class="center">
+                <img class="icones" src="img/tesoura.png" alt="Tesoura">
+                <br>
+                <input type="radio" id="tesoura" name="escolha-bot" value="tesoura" disabled>
+                <label for="tesoura">Tesoura</label>
+            </div>
+        </span>
+    </div>
+    <hr>
+    <script src="index.js"></script>
+</body>
+</html>
