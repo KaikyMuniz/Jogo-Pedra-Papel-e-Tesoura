@@ -6,6 +6,16 @@ body{
     background-image: linear-gradient(0deg, #4d31eb, #520afa);
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(0deg, #4d31eb, #520afa);
+    border-radius: 10px; 
+    border: 3px solid rgb(255, 255, 255);
+}
+
 h1{
     width: 100%;
     text-align: center;
